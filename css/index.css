@@ -6,15 +6,36 @@ body {
   font-family: 'Quicksand';
 }
 
-.landing-page {
-  color: rgb(212, 209, 209);
+/* Navigation */
+.menu {
+  height: 100%;
+  right: 8px;
+  position: fixed;
+  font-family: Arial, Tahoma;
+  font-size: 13px;
+  z-index: 10;
+  fill: rgb(87, 81, 81);
+}
+.move-nearby {
+  cursor: pointer;
+}
+.normal {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  zoom: 40%;
 }
 
+/* Home */
+.home {
+  color: rgb(212, 209, 209);
+  background-color: rgb(29, 26, 26);
+}
 .greetings {
   font-family: 'Poiret One';
   font-size: 58px;
 }
-
 .introduction {
   font-size: 30px;
 }
+
+/* About */

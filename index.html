@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!--Links-->
-  <link rel="shortcut icon" href="assets/logo.png" />
+  <link rel="shortcut icon" href="assets/favicon.png" />
   <link 
     rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
@@ -15,11 +15,10 @@
   />
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
-  <!--fullPage.js-->
-  <link rel="stylesheet" type="text/css" href="fullpage/fullpage.css" />
-  <script type="text/javascript" src="fullpage/fullpage.js"></script>
+  <!--viewScroller.js-->
+  <link rel="stylesheet" type="text/css" href="viewScroller.js/viewScroller.css">
 
-  <!--Typer animation-->
+  <!--Typer.js-->
   <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
   <!--Title-->
@@ -31,7 +30,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(29, 26, 26)">
     <a class="navbar-brand" href="#home">
-      <img src="assets/signature.png" alt="signature">
+      <img src="assets/logo.png" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,79 +44,105 @@
         <a class="nav-item nav-link" href="#about">
           <strong>ABOUT</strong>
         </a>
+        <a class="nav-item nav-link" href="#contact">
+          <strong>CONTACT</strong>
+        </a>
       </ul>
     </div>
   </nav>
   <!--Navbar-->
 
-  <!--Pages-->
-  <div id="fullpage">
-    <!--Landing Page-->
-    <div class="section">
-      <div class="landing-page">
-        <div class="container text-center">
-          <div class="greetings">
-            <span
-              class="typer"
-              id="main"
-              data-words="Hello!,Bonjour!,Hola!,Ciao!,Xin chào!"
-              data-delay="100"
-              data-deleteDelay="1000"
-              data-colors="white,white,white,white,white"
-            ></span>
-            <span class="cursor" data-owner="main"></span>
+  <!--Navigation Menu-->
+  <div class="menu">
+    <div class="vs-center-wrap">
+      <div class="vs-center">
+        <div class="vs-mainview-prev move-nearby">
+          <img src="assets/navigation-prev.svg" alt="Navigation Prev">
+        </div>
+        <div id="navigation-normal">
+          <div class="normal">
+            <a href="#home" class="vs-anchor">
+              <img src="assets/navigation-active.svg" alt="Navigation Normal">
+            </a>
           </div>
-          <div class="introduction">
-            <p></p>
-            <p>I am <strong style="color:white">Vinh Nguyen</strong>.</p>
-            <p>Welcome to my playground!</p>
+          <div class="normal">
+            <a href="#about" class="vs-anchor">
+              <img src="assets/navigation-disable.svg" alt="Navigation Normal">
+            </a>
           </div>
+          <div class="normal">
+            <a href="#contact" class="vs-anchor">
+              <img src="assets/navigation-disable.svg" alt="Navigation Normal">
+            </a>
+          </div>
+        </div>
+        <div class="vs-mainview-next move-nearby">
+            <img class="svg" src="assets/navigation-next.svg" alt="Navigation Next">
         </div>
       </div>
     </div>
-    <!--Landing Page-->
+  </div>
+  <!--Navigation Menu-->
 
-    <div class="section">
-      <div class="about-me">
-        Page 2
+  <!--Views-->
+  <div class="mainbag">
+    <!--Home-->
+    <div vs-anchor="home" class="mainview home">
+        <div class="vs-center-wrap">
+            <div class="vs-center">
+              <div class="container text-center">
+                <div class="greetings">
+                  <span
+                    class="typer"
+                    id="main"
+                    data-words="Hello!,Bonjour!,Hola!,Ciao!,Xin chào!"
+                    data-delay="100"
+                    data-deleteDelay="1000"
+                    data-colors="white,white,white,white,white"
+                  ></span>
+                  <span class="cursor" data-owner="main"></span>
+                </div>
+                <div class="introduction">
+                  <p></p>
+                  <p>I am <strong style="color:white">Vinh Nguyen</strong>.</p>
+                  <p>Welcome to my playground!</p>
+                </div>
+              </div>
+          </div>
       </div>
     </div>
+
+    <!--About me-->
+    <div vs-anchor="about" class="mainview">
+        <div class="vs-center-wrap">
+          <div class="vs-center">About me</div>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div vs-anchor="contact" class="mainview">
+        <div class="vs-center-wrap">
+          <div class="vs-center">Contact</div>
+        </div>
+    </div>
   </div>
-  <!--Pages-->
+  <!--Views-->
 
-
-  <!--fullPage initialization-->
-  <script>
-    new fullpage('#fullpage', {
-      //Navigation
-      menu: '#menu',
-      lockAnchors: false,
-      anchors:['home', 'about'],
-      navigation: true,
-      navigationPosition: 'right',
-      showActiveTooltip: true,
-
-      //Scrolling
-      autoScrolling: true,
-      scrollHorizontally: true,
-
-      //Accessibility
-      keyboardScrolling: true,
-      animateAnchor: true,
-      recordHistory: true,
-
-      //Sections color
-      sectionsColor: ['rgb(29, 26, 26)', 'white']
-    });
-  </script>
-
-  <!--Bootstrap scripts-->
+  <!--Bootstrap & jQuery scripts-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!--Set up Navbar-->
-  <script src="js/navbar.js"></script>
+  <!--viewScroller.js-->
+  <script src="viewScroller.js/jquery-3.1.0.min.js"></script>
+  <script src="viewScroller.js/jquery.easing.min.js"></script>
+  <script src="viewScroller.js/jquery.mousewheel.min.js"></script>
+  <script src="viewScroller.js/viewScroller.js"></script>
+  <script src="js/viewScroller.js"></script>
+
+  <!--navigation.js-->
+  <script src="js/navigation.js"></script>
+
 </body>
 
 </html>
