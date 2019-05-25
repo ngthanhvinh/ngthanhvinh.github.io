@@ -26,16 +26,35 @@
   <title>Vinh Nguyen</title>
 </head>
 
+
 <body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(29, 26, 26)">
+    <a class="navbar-brand" href="#home">
+      <img src="assets/signature.png" alt="signature">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto" id="navbar-items">
+        <a class="nav-item nav-link" href="#home">
+          <strong>HOME</strong> <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-item nav-link" href="#about">
+          <strong>ABOUT</strong>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <!--Navbar-->
+
+  <!--Pages-->
   <div id="fullpage">
     <!--Landing Page-->
     <div class="section">
       <div class="landing-page">
-        <nav class="nav">
-          <a class="nav-link active" href="#">
-            <img src="assets/signature.png" alt="signature">
-          </a>
-        </nav>
         <div class="container text-center">
           <div class="greetings">
             <span
@@ -49,6 +68,7 @@
             <span class="cursor" data-owner="main"></span>
           </div>
           <div class="introduction">
+            <p></p>
             <p>I am <strong style="color:white">Vinh Nguyen</strong>.</p>
             <p>Welcome to my playground!</p>
           </div>
@@ -56,15 +76,23 @@
       </div>
     </div>
     <!--Landing Page-->
+
+    <div class="section">
+      <div class="about-me">
+        Page 2
+      </div>
+    </div>
   </div>
+  <!--Pages-->
+
 
   <!--fullPage initialization-->
   <script>
     new fullpage('#fullpage', {
       //Navigation
       menu: '#menu',
-      lockAnchors: true,
-      anchors:['welcome', 'about-me'],
+      lockAnchors: false,
+      anchors:['home', 'about'],
       navigation: true,
       navigationPosition: 'right',
       showActiveTooltip: true,
@@ -77,8 +105,19 @@
       keyboardScrolling: true,
       animateAnchor: true,
       recordHistory: true,
+
+      //Sections color
+      sectionsColor: ['rgb(29, 26, 26)', 'white']
     });
   </script>
+
+  <!--Bootstrap scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--Set up Navbar-->
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>
