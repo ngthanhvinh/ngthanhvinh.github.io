@@ -27,15 +27,15 @@ body {
 
 /* Home */
 .home {
-  color: rgb(212, 209, 209);
+  color: rgb(226, 223, 223);
   background-color: rgb(29, 26, 26);
 }
 .greetings {
   font-family: 'Poiret One';
-  font-size: 58px;
+  font-size: 63px;
 }
 .introduction {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /* About */
