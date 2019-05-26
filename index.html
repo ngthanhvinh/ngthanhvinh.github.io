@@ -29,7 +29,7 @@
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(29, 26, 26)">
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="">
       <img src="assets/logo.png" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,50 +39,58 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto" id="navbar-items">
         <a class="nav-item nav-link" href="#home">
-          <strong>HOME</strong> <span class="sr-only">(current)</span>
+          Home <span class="sr-only">(current)</span>
         </a>
         <a class="nav-item nav-link" href="#about">
-          <strong>ABOUT</strong>
+          About
+        </a>
+        <a class="nav-item nav-link" href="#projects">
+          Projects
         </a>
         <a class="nav-item nav-link" href="#contact">
-          <strong>CONTACT</strong>
+          Contact
         </a>
       </ul>
     </div>
   </nav>
   <!--Navbar-->
 
-  <!--Navigation Menu-->
+  <!--Menu-->
   <div class="menu">
     <div class="vs-center-wrap">
       <div class="vs-center">
         <div class="vs-mainview-prev move-nearby">
-          <img src="assets/navigation-prev.svg" alt="Navigation Prev">
+          <img src="assets/menu-prev.svg" alt="Menu Prev">
         </div>
-        <div id="navigation-normal">
+        <div id="menu-normal">
           <div class="normal">
             <a href="#home" class="vs-anchor">
-              <img src="assets/navigation-active.svg" alt="Navigation Normal">
+              <img src="assets/menu-active.svg" alt="Menu Normal">
             </a>
           </div>
           <div class="normal">
             <a href="#about" class="vs-anchor">
-              <img src="assets/navigation-disable.svg" alt="Navigation Normal">
+              <img src="assets/menu-disable.svg" alt="Menu Normal">
+            </a>
+          </div>
+          <div class="normal">
+            <a href="#projects" class="vs-anchor">
+              <img src="assets/menu-disable.svg" alt="Menu Normal">
             </a>
           </div>
           <div class="normal">
             <a href="#contact" class="vs-anchor">
-              <img src="assets/navigation-disable.svg" alt="Navigation Normal">
+              <img src="assets/menu-disable.svg" alt="Menu Normal">
             </a>
           </div>
         </div>
         <div class="vs-mainview-next move-nearby">
-            <img class="svg" src="assets/navigation-next.svg" alt="Navigation Next">
+            <img class="svg" src="assets/menu-next.svg" alt="Menu Next">
         </div>
       </div>
     </div>
   </div>
-  <!--Navigation Menu-->
+  <!--Menu-->
 
   <!--Views-->
   <div class="mainbag">
@@ -90,7 +98,7 @@
     <div vs-anchor="home" class="mainview home">
         <div class="vs-center-wrap">
             <div class="vs-center">
-              <div class="container text-center">
+              <div class="container">
                 <div class="greetings">
                   <span
                     class="typer"
@@ -115,9 +123,27 @@
     <!--About me-->
     <div vs-anchor="about" class="mainview">
         <div class="vs-center-wrap">
-          <div class="vs-center">About me</div>
+          <div class="vs-center">
+            <div class="container">
+              <div class="row">
+                <div class="col" style="margin:auto">
+                  <h1>About me</h1>
+                </div>
+                <div class="col">
+                  <img class="img-fluid" src="assets/portrait.png" alt="portrait">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
+
+    <!--Projects-->
+    <div vs-anchor="projects" class="mainview">
+      <div class="vs-center-wrap">
+        <div class="vs-center">Projects</div>
+      </div>
+  </div>
 
     <!--Contact-->
     <div vs-anchor="contact" class="mainview">

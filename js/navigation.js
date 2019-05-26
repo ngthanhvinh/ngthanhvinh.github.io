@@ -17,11 +17,11 @@ function activeNavbar() {
 }
 
 function activeMenu() {
-  var links = $('#navigation-normal div a');
+  var links = $('#menu-normal div a');
   var active = Boolean(false);
 
-  var disableSrc = 'assets/navigation-disable.svg';
-  var activeSrc = 'assets/navigation-active.svg';
+  var disableSrc = 'assets/menu-disable.svg';
+  var activeSrc = 'assets/menu-active.svg';
 
   $.each(links, function(key, va) {
     if (va.href === document.URL) {
