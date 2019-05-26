@@ -1,3 +1,4 @@
+// Fix the navbar when the URL is changed
 function activeNavbar() {
   $('#navbar-items a').removeClass('active');
 
@@ -16,6 +17,7 @@ function activeNavbar() {
   }
 }
 
+// Fix the menu when the URL is changed
 function activeMenu() {
   var links = $('#menu-normal div a');
   var active = Boolean(false);
@@ -43,10 +45,18 @@ function activeMenu() {
   }
 }
 
-function activeNavigation() {
+// Portrait Animation when the URL is changed to '#about'
+function portraitAnimation() {
+  var portrait = $('#portrait');
+  console.log(portrait);
+}
+
+// When location hash changes, run hashChangeHandler()
+function hashChangeHandler() {
+  portraitAnimation();
   activeNavbar();
   activeMenu();
 }
 
-$(activeNavigation);
-window.onhashchange = activeNavigation;
+$(hashChangeHandler);
+window.onhashchange = hashChangeHandler;

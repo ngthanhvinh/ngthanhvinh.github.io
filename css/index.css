@@ -1,41 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import 'menu.css';
+@import 'home.css';
+@import 'about.css';
 
 html,
 body {
   font-family: 'Quicksand';
 }
-
-/* Navigation */
-.menu {
-  height: 100%;
-  right: 8px;
-  position: fixed;
-  font-family: Arial, Tahoma;
-  font-size: 13px;
-  z-index: 10;
-  fill: rgb(87, 81, 81);
-}
-.move-nearby {
-  cursor: pointer;
-}
-.normal {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  zoom: 40%;
-}
-
-/* Home */
-.home {
-  color: rgb(226, 223, 223);
-  background-color: rgb(29, 26, 26);
-}
-.greetings {
-  font-family: 'Poiret One';
-  font-size: 63px;
-}
-.introduction {
-  font-size: 40px;
-}
-
-/* About */
