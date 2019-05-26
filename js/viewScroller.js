@@ -3,6 +3,6 @@ $(document).ready(function() {
   $('.mainbag').viewScroller({
     useScrollbar: true,
     changeWhenAnim: false,
-    timeToFit: 2000
+    timeToFit: 1e9
   });
 });

@@ -1,6 +1,11 @@
 /* About */
 .portrait-img {
+  margin-top: 20px;
   opacity: 0.3;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  zoom: 50%;
+  border: 15px solid rgb(75, 72, 72);
+  border-radius: 10px;
+  background-color: rgb(237, 238, 238);
 }
