@@ -2,6 +2,7 @@
 $(document).ready(function() {
   $('.mainbag').viewScroller({
     useScrollbar: true,
-    changeWhenAnim: false
+    changeWhenAnim: false,
+    timeToFit: 3000
   });
 });

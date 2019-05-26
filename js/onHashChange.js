@@ -46,12 +46,12 @@ function activeMenu() {
 }
 
 // Portrait Animation when the URL is changed to '#about'
-async function portraitAnimation() {
+function portraitAnimation() {
   var portraitImg = $('.portrait-img');
   if (location.hash === '#about') {
     setTimeout(function() {
       portraitImg.css('opacity', '1');
-    }, 500);
+    }, 300);
   } else {
     portraitImg.css('opacity', '0.3');
   }
