@@ -1,7 +1,7 @@
 // Set viewScroller
 $(document).ready(function() {
   $('.mainbag').viewScroller({
-    useScrollbar: false,
+    useScrollbar: true,
     changeWhenAnim: false
   });
 });

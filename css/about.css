@@ -1,0 +1,6 @@
+/* About */
+.portrait-img {
+  opacity: 0.3;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
