@@ -57,9 +57,20 @@ function portraitAnimation() {
   }
 }
 
+// Text Animation when the URL is changed to '#projects'
+function projectsTextAnimation() {
+  if (location.hash != '#projects') return;
+  var projectsText = $('.projects-text');
+  console.log(projectsText);
+  setTimeout(function() {
+    projectsText.css('opacity', '1');
+  }, 1000);
+}
+
 // When location hash changes, run hashChangeHandler()
 function hashChangeHandler() {
   portraitAnimation();
+  projectsTextAnimation();
   activeNavbar();
   activeMenu();
 }
