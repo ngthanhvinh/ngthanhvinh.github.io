@@ -51,7 +51,7 @@ function portraitAnimation() {
   if (location.hash === '#about') {
     setTimeout(function() {
       portraitImg.css('opacity', '1');
-    }, 300);
+    }, 500);
   } else {
     portraitImg.css('opacity', '0.3');
   }
