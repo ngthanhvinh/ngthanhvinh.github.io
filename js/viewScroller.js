@@ -11,10 +11,13 @@ function getViewsHeight() {
 
 function setViewScroller(viewsHeight) {
   var $windowHeight = $(window).height();
+  // console.log($windowHeight);
   var viewsHeight = getViewsHeight();
+  // console.log(viewsHeight);
   viewsHeight = viewsHeight.map(height => {
     return height <= $windowHeight ? 0 : height;
   });
+  // console.log(viewsHeight);
   $('.mainbag').viewScroller({
     useScrollbar: true,
     changeWhenAnim: false,
@@ -25,5 +28,4 @@ function setViewScroller(viewsHeight) {
 
 $(document).ready(function() {
   setViewScroller();
-  $(window).resize(setViewScroller);
 });
