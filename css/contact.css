@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
+/* Contact */
 .contact-word {
   position: absolute;
   transform: translateX(-50%);
@@ -11,7 +10,6 @@
 .contact-letter {
   display: inline-block;
   position: relative;
-  /* float: left; */
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
