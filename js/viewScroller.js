@@ -19,7 +19,7 @@ function setViewScroller(viewsHeight) {
     useScrollbar: true,
     changeWhenAnim: false,
     viewsHeight: viewsHeight,
-    timeToFit: 2000
+    timeToFit: 1e9
   });
 }
 
