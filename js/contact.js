@@ -2,16 +2,14 @@ var words = document.getElementsByClassName('contact-word');
 var logos = document.getElementsByClassName('contact-logo');
 var wordArray = [];
 var currentWord = 0;
-// var newWord = 0;
-// var day = new Date();
-// var currentTime = day.getTime();
+var newWord = 0;
 
 words[currentWord].style.opacity = 1;
 for (var i = 0; i < words.length; i++) {
   splitLetters(words[i]);
 }
 
-function changeWord(newWord) {
+function changeWord() {
   if (currentWord === newWord) return;
 
   var cw = wordArray[currentWord];
@@ -35,7 +33,9 @@ function animateLetterOut(cw, i) {
 }
 
 function animateLetterIn(nw, i) {
-  nw[i].className = 'contact-letter in';
+  setTimeout(function() {
+    nw[i].className = 'contact-letter in';
+  }, 100);
 }
 
 function splitLetters(word) {
@@ -56,16 +56,19 @@ function splitLetters(word) {
 logosContainer = document.getElementById('contact-logos');
 
 logosContainer.addEventListener('mouseleave', function() {
-  changeWord(0);
+  newWord = 0;
 });
 
 for (let i = 0; i < logos.length; ++i) {
   logos[i].addEventListener('mouseenter', function() {
     logos[i].children[0].src =
       logos[i].children[0].src.slice(0, -4) + '-hover.svg';
-    changeWord(i + 1);
+    newWord = i + 1;
   });
   logos[i].addEventListener('mouseleave', function() {
     logos[i].children[0].src = logos[i].children[0].src.slice(0, -10) + '.svg';
   });
 }
+
+var changeDelay = 300;
+setInterval(changeWord, changeDelay);
