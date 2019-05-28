@@ -27,5 +27,18 @@ function setViewScroller(viewsHeight) {
 }
 
 $(document).ready(function() {
-  setViewScroller();
+  var resizeDelay = 2500;
+  var doResize = true;
+  var resizer = function() {
+    if (doResize) {
+      setViewScroller();
+      doResize = false;
+    }
+  };
+  setInterval(resizer, resizeDelay);
+  resizer();
+
+  $(window).resize(function() {
+    doResize = true;
+  });
 });
