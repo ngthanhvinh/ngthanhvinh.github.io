@@ -1,4 +1,8 @@
 /* Contact */
+.contact-container {
+  text-align: center;
+}
+
 #contact-logos {
   margin-top: 70px;
 }

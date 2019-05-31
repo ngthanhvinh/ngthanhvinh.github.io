@@ -10,3 +10,17 @@ html,
 body {
   font-family: 'Quicksand';
 }
+
+/* view content center */
+
+.center-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

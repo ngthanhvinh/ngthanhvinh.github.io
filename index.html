@@ -15,9 +15,6 @@
   />
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
-  <!--viewScroller.js-->
-  <link rel="stylesheet" type="text/css" href="viewScroller.js/viewScroller.css">
-
   <!--Typer.js-->
   <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
@@ -28,7 +25,7 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(29, 26, 26)">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(32, 35, 41)">
     <a class="navbar-brand" href="">
       <img src="assets/logo.png" alt="logo">
     </a>
@@ -55,79 +52,41 @@
   </nav>
   <!--Navbar-->
 
-  <!--Menu-->
-  <div class="menu">
-    <div class="vs-center-wrap">
-      <div class="vs-center">
-        <div class="vs-mainview-prev move-nearby">
-          <img src="assets/menu-prev.svg" alt="Menu Prev">
-        </div>
-        <div id="menu-normal">
-          <div class="normal">
-            <a href="#home" class="vs-anchor">
-              <img src="assets/menu-active.svg" alt="Menu Normal">
-            </a>
-          </div>
-          <div class="normal">
-            <a href="#about" class="vs-anchor">
-              <img src="assets/menu-disable.svg" alt="Menu Normal">
-            </a>
-          </div>
-          <div class="normal">
-            <a href="#projects" class="vs-anchor">
-              <img src="assets/menu-disable.svg" alt="Menu Normal">
-            </a>
-          </div>
-          <div class="normal">
-            <a href="#contact" class="vs-anchor">
-              <img src="assets/menu-disable.svg" alt="Menu Normal">
-            </a>
-          </div>
-        </div>
-        <div class="vs-mainview-next move-nearby">
-            <img class="svg" src="assets/menu-next.svg" alt="Menu Next">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Menu-->
-
-  <!--Views-->
-  <div class="mainbag">
+  <div id="fullpage">
     <!--Home-->
-    <div vs-anchor="home" class="mainview home">
-        <div class="vs-center-wrap">
-            <div class="vs-center">
-              <div class="container home-container">
-                <div class="greetings">
-                  <span
-                    class="typer"
-                    id="main"
-                    data-words="Hello!,Bonjour!,Hola!,Ciao!,Xin chào!"
-                    data-delay="100"
-                    data-deleteDelay="1000"
-                    data-colors="white,white,white,white,white"
-                  ></span>
-                  <span class="cursor" data-owner="main"></span>
-                </div>
-                <div class="introduction">
-                  <p></p>
-                  <p>I am <strong style="color:white">Vinh Nguyen</strong>.</p>
-                  <p>Welcome to my playground!</p>
-                </div>
+    <div class="section fp-auto-height-responsive fp-noscroll home">
+      <div class="container home-container">
+        <div class="center-wrap">
+          <div class="center">
+            <div class="greetings">
+                <span
+                  class="typer"
+                  id="main"
+                  data-words="Hello!,Bonjour!,Hola!,Ciao!,Xin chào!"
+                  data-delay="100"
+                  data-deleteDelay="1000"
+                  data-colors="white,white,white,white,white"
+                ></span>
+                <span class="cursor" data-owner="main"></span>
+              </div>
+              <div class="introduction">
+                <p></p>
+                <p>I am <strong style="color:white">Vinh Nguyen</strong>.</p>
+                <p>Welcome to my playground!</p>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <!--About me-->
-    <div vs-anchor="about" class="mainview about">
-        <div class="vs-center-wrap">
-          <div class="vs-center">
+    <div class="section fp-auto-height-responsive about">
+      <div class="center-wrap">
+        <div class="center">
             <div class="container about-container">
               <div class="row flex-sm-row-reverse">
                 <div class="portrait-container col-sm-6">
-                  <img class="portrait-img img-fluid" src="assets/portrait.png" alt="portrait">
+                  <img style="margin-top: 50px" class="portrait-img img-fluid" src="assets/portrait.png" alt="portrait">
                 </div>
                 <div class="col-sm-6" style="margin:auto">
                   <h1>Hey there!</h1>
@@ -143,72 +102,80 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
+      </div>
     </div>
 
     <!--Projects-->
-    <div vs-anchor="projects" class="mainview projects">
-      <div class="vs-center-wrap">
-        <div class="vs-center">
-          <div class="container projects-container">
+    <div class="section fp-auto-height-responsive fp-noscroll projects">
+      <div class="container projects-container">
+        <div class="center-wrap">
+          <div class="center">
             <div class="projects-text">
-              <h2>Take a glance at what I have made in my free time!</h2>
+              <h2>Take a glance at what I made in my free time!</h2>
             </div>
           </div>
         </div>
       </div>
-  </div>
-
+    </div>
+    
     <!--Contact-->
-    <div vs-anchor="contact" class="mainview contact">
-        <div class="vs-center-wrap">
-          <div class="vs-center">
-            <div class="container contact-container">
-              <h1>Do you want to get in touch?</h1>
-              <div>
-                <span class="contact-word">Contact me</span>
-                <span class="contact-word">Email</span>
-                <span class="contact-word">Facebook</span>
-                <span class="contact-word">Github</span>
-                <span class="contact-word">LinkedIn</span>
-              </div>
-              <div id="contact-logos">
-                <a class="contact-logo" href="mailto:ngthanhvinh2000@gmail.com">
-                  <img src="assets/email.svg" alt="Email Logo">
-                </a>
-                <a class="contact-logo" target="_blank" href="https://www.facebook.com/ngthanhvinh2000">
-                  <img src="assets/facebook.svg" alt="Facebook Logo">
-                </a>
-                <a class="contact-logo" target="_blank" href="https://www.github.com/ngtvin">
-                  <img src="assets/github.svg" alt="Github Logo">
-                </a>
-                <a class="contact-logo" target="_blank" href="https://www.linkedin.com/in/ngthanhvinh2000">
-                  <img src="assets/linkedin.svg" alt="LinkedIn Logo">
-                </a>
-              </div>
-            </div>
-          </div>
+    <div class="section fp-auto-height-responsive fp-noscroll contact">
+      <div class="container contact-container">
+        <h1>Do you want to get in touch?</h1>
+        <div>
+          <span class="contact-word">Contact me</span>
+          <span class="contact-word">Email</span>
+          <span class="contact-word">Facebook</span>
+          <span class="contact-word">Github</span>
+          <span class="contact-word">LinkedIn</span>
         </div>
+        <div id="contact-logos">
+          <a class="contact-logo" href="mailto:ngthanhvinh2000@gmail.com">
+            <img src="assets/email.svg" alt="Email Logo">
+          </a>
+          <a class="contact-logo" target="_blank" href="https://www.facebook.com/ngthanhvinh2000">
+            <img src="assets/facebook.svg" alt="Facebook Logo">
+          </a>
+          <a class="contact-logo" target="_blank" href="https://www.github.com/ngtvin">
+            <img src="assets/github.svg" alt="Github Logo">
+          </a>
+          <a class="contact-logo" target="_blank" href="https://www.linkedin.com/in/ngthanhvinh2000">
+            <img src="assets/linkedin.svg" alt="LinkedIn Logo">
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-  <!--Views-->
 
   <!--Bootstrap & jQuery scripts-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!--viewScroller.js-->
-  <script src="viewScroller.js/jquery-3.1.0.min.js"></script>
-  <script src="viewScroller.js/jquery.easing.min.js"></script>
-  <script src="viewScroller.js/jquery.mousewheel.min.js"></script>
-  <script src="viewScroller.js/viewScroller.js"></script>
-
   <!--Run all js scripts-->
-  <script src="js/viewScroller.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="js/onHashChange.js"></script>
   <script src="js/contact.js"></script>
+  <!--Fullpage-->
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        //options here
+        autoScrolling: false,
+        scrollHorizontally: true,
+        anchors:['home', 'about', 'projects', 'contact'],
+        navigation: false,
+        scrollBar: true,
+        sectionsColor : ['rgb(32, 35, 41)', 'white', 'rgb(32, 35, 41)', 'white'],
+      });
+    });
+  </script>
+    
 </body>
 
 </html>
