@@ -25,3 +25,12 @@ body {
   vertical-align: middle;
   text-align: center;
 }
+
+.hr {
+  background-color: #353535;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 3px;
+  border-radius: 10px;
+}
