@@ -1,8 +1,6 @@
 /* About */
 .portrait-img {
   opacity: 1;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
   zoom: 55%;
   border: 15px solid rgb(101, 103, 104);
   border-radius: 10px;
