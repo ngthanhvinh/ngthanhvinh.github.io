@@ -18,6 +18,12 @@
   <!--Typer.js-->
   <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
+  <!--Animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!--Title-->
   <title>Vinh Nguyen</title>
 </head>
@@ -54,7 +60,7 @@
   <div id="fullpage">
     <!--Home-->
     <div class="section fp-auto-height-responsive fp-noscroll home">
-      <div class="container home-container">
+      <div data-aos="fade-up" class="container home-container">
         <div class="center-wrap">
           <div class="center">
             <div class="greetings">
@@ -83,7 +89,7 @@
         <div class="center">
             <div class="container about-container">
               <div class="row flex-sm-row-reverse">
-                <div class="portrait-container col-sm-6">
+                <div data-aos="fade-left" class="portrait-container col-sm-6">
                   <img class="portrait-img img-fluid" src="assets/portrait.png" alt="portrait">
                 </div>
                 <div class="col-sm-6" style="margin:auto">
@@ -160,9 +166,9 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="js/onHashChange.js"></script>
   <script src="js/contact.js"></script>
+
   <!--Fullpage-->
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
   <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script>
@@ -176,6 +182,14 @@
         scrollBar: true,
         sectionsColor : ['rgb(32, 35, 41)', 'white', 'rgb(32, 35, 41)', 'white'],
       });
+    });
+  </script>
+
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      mirror: true
     });
   </script>
     
