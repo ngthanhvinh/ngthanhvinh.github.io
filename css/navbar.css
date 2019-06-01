@@ -16,8 +16,7 @@
 .navbar-toggler:hover {
   background: transparent !important;
 }
-.navbar-toggler:focus,
-.navbar-toggler:active {
+.navbar-toggler:focus {
   outline: 0;
 }
 

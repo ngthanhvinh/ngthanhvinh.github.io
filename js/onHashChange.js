@@ -17,39 +17,18 @@ function activeNavbar() {
   }
 }
 
-// Fix the menu when the URL is changed
-function activeMenu() {
-  var links = $('#menu-normal div a');
-  var active = Boolean(false);
-
-  var disableSrc = 'assets/menu-disable.svg';
-  var activeSrc = 'assets/menu-active.svg';
-
-  $.each(links, function(key, va) {
-    if (va.href === document.URL) {
-      $(this)
-        .children()
-        .attr('src', activeSrc);
-      active = true;
-    } else {
-      $(this)
-        .children()
-        .attr('src', disableSrc);
-    }
-  });
-
-  if (!active) {
-    $(links[0])
-      .children()
-      .attr('src', activeSrc);
-  }
-}
-
 // When location hash changes, run hashChangeHandler()
 function hashChangeHandler() {
   activeNavbar();
-  activeMenu();
 }
 
-$(hashChangeHandler);
-window.onhashchange = hashChangeHandler;
+$(function() {
+  hashChangeHandler();
+  $(window)
+    .bind('hashchange', function() {
+      hashChangeHandler();
+    })
+    .trigger('hashchange');
+});
+
+setInterval(hashChangeHandler, 80);
