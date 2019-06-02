@@ -59,7 +59,7 @@
 
   <div id="fullpage">
     <!--Home-->
-    <div class="section fp-auto-height-responsive fp-noscroll home">
+    <div class="section fp-auto-height-responsive fp-noscroll home" id="particles-js">
       <div data-aos="fade-up" class="container home-container">
         <div class="center-wrap">
           <div class="center">
@@ -167,6 +167,10 @@
   <script src="js/onHashChange.js"></script>
   <script src="js/contact.js"></script>
 
+  <!--particles.js-->
+  <script src="js/particles.js"></script>
+  <script src="js/setParticles.js"></script>
+
   <!--Fullpage-->
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
@@ -180,7 +184,7 @@
         anchors:['home', 'about', 'projects', 'contact'],
         navigation: false,
         scrollBar: true,
-        sectionsColor : ['rgb(32, 35, 41)', 'white', 'rgb(32, 35, 41)', 'white'],
+        // sectionsColor : ['rgb(32, 35, 41)', 'white', 'rgb(32, 35, 41)', 'white'],
       });
     });
   </script>
