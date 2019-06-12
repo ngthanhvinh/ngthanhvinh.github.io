@@ -1,4 +1,8 @@
 /* About */
+.about {
+  min-height: 100vh;
+}
+
 .portrait-img {
   opacity: 1;
   zoom: 55%;

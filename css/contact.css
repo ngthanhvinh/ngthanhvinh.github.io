@@ -1,4 +1,8 @@
 /* Contact */
+.contact {
+  height: 100vh;
+}
+
 .contact-container {
   text-align: center;
 }
