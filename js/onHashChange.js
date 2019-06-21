@@ -8,6 +8,7 @@ function activeNavbar() {
   $.each(links, function(key, va) {
     if (va.href === document.URL) {
       $(this).addClass('active');
+      $(this).focus();
       active = true;
     }
   });

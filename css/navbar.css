@@ -9,9 +9,12 @@
   margin-right: 7px;
 }
 
-.nav-item:active,
-.nav-item:hover {
-  text-decoration: underline;
+.nav-link.active {
+  border-bottom: 2px solid white;
+}
+
+.nav-link:focus {
+  outline: none;
 }
 
 .navbar-toggler {
