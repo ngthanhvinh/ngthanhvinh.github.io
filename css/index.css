@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 @import 'home.css';
 @import 'about.css';
 @import 'projects.css';
@@ -27,8 +28,6 @@ body {
 
 .hr {
   background-color: #353535;
-  margin-top: 50px;
-  margin-bottom: 20px;
   width: 200px;
   height: 3px;
   border-radius: 10px;

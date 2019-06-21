@@ -8,18 +8,20 @@
 }
 
 #contact-logos {
-  margin-top: 67px;
+  margin-top: 50px;
 }
 
 .contact-logo {
   margin-left: 12px;
   margin-right: 12px;
 }
+
 .contact-word {
+  font-weight: bold;
+  font-family: 'IBM Plex Mono';
+  font-size: 26px;
   position: absolute;
   transform: translateX(-50%);
-  font-size: 28px;
-  color: rgb(39, 39, 39);
   opacity: 0;
 }
 

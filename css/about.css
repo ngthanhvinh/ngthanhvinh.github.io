@@ -5,10 +5,14 @@
 
 .portrait-img {
   opacity: 1;
-  zoom: 55%;
-  border: 15px solid rgb(101, 103, 104);
+  zoom: 60%;
+  border: 12px solid rgb(87, 87, 88);
   border-radius: 10px;
-  background-color: rgb(237, 238, 238);
+  background-color: rgb(249, 250, 232);
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.description {
+  font-size: 22px;
 }

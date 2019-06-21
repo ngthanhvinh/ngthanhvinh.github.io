@@ -9,6 +9,11 @@
   margin-right: 7px;
 }
 
+.nav-item:active,
+.nav-item:hover {
+  text-decoration: underline;
+}
+
 .navbar-toggler {
   border: none;
   background: transparent !important;
