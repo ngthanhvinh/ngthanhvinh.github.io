@@ -1,18 +1,34 @@
 /* About */
 .about {
-  min-height: 100vh;
+	min-height: 100vh;
 }
 
 .portrait-img {
-  opacity: 1;
-  zoom: 60%;
-  border: 12px solid rgb(87, 87, 88);
-  border-radius: 10px;
-  background-color: rgb(249, 250, 232);
-  margin-top: 50px;
-  margin-bottom: 50px;
+	border: 8px solid rgb(87, 87, 88);
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: rgb(244, 252, 253);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 586px) {
+	.portrait-img {
+		-moz-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+}
+
+.portrait-img:hover {
+	opacity: 0.8;
 }
 
 .description {
-  font-size: 22px;
+	font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+	.description {
+		font-size: 17px;
+	}
 }

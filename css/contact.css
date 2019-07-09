@@ -1,47 +1,57 @@
 /* Contact */
 .contact {
-  height: 100vh;
+	min-height: 100vh;
 }
 
 .contact-container {
-  text-align: center;
+	text-align: center;
 }
 
 #contact-logos {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 .contact-logo {
-  margin-left: 12px;
-  margin-right: 12px;
+	margin-left: 12px;
+	margin-right: 12px;
 }
 
 .contact-word {
-  font-weight: bold;
-  font-family: 'IBM Plex Mono';
-  font-size: 26px;
-  position: absolute;
-  transform: translateX(-50%);
-  opacity: 0;
+	font-weight: bold;
+	font-family: "IBM Plex Mono";
+	font-size: 26px;
+	position: absolute;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+@media screen and (max-width: 586px) {
+	.contact-word {
+		font-size: 22px;
+	}
+	.contact-logo {
+		margin-left: 7px;
+		margin-right: 7px;
+	}
 }
 
 .contact-letter {
-  display: inline-block;
-  position: relative;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
+	display: inline-block;
+	position: relative;
+	transform: translateZ(25px);
+	transform-origin: 50% 50% 25px;
 }
 
 .contact-letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transform: rotateX(90deg);
+	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .contact-letter.behind {
-  transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
 }
 
 .contact-letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transform: rotateX(0deg);
+	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

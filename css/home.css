@@ -1,24 +1,25 @@
 /* Home */
 .home {
-  color: rgb(226, 223, 223);
-  background-color: rgb(32, 35, 41);
-  height: 100vh;
+	color: white;
+	background-color: rgb(32, 35, 41);
+	height: 100vh;
 }
 .home-container {
-  position: absolute;
-  text-align: center;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
 .greetings {
-  font-family: 'Poiret One';
-  font-size: 55px;
-  margin-bottom: 30px;
+	font-family: "Literata";
+	font-size: 50px;
+	margin-bottom: 30px;
 }
 .introduction {
-  font-size: 35px;
+	font-family: "Quicksand";
+	font-size: 35px;
 }
