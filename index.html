@@ -126,28 +126,20 @@
     <!--Contact-->
     <div class="section fp-auto-height-responsive fp-noscroll contact">
       <div class="container contact-container">
-        <h1 style="font-size: 45px">Want to get in touch?</h1>
+        <h1 style="font-size: 45px" class="text-serif">Want to get in touch?</h1>
         <hr class="hr">
         <div style="padding-top:30px">
-          <span class="contact-word">CONTACT ME</span>
-          <span class="contact-word" style="color:#f7273c">EMAIL</span>
-          <span class="contact-word" style="color:#3B5998">FACEBOOK</span>
-          <span class="contact-word" style="color:#000000">GITHUB</span>
-          <span class="contact-word" style="color:#007AB9">LINKEDIN</span>
+          <span class="contact-word">Contact me</span>
+          <span class="contact-word" style="color:#f7273c">Email</span>
+          <span class="contact-word" style="color:#3B5998">Facebook</span>
+          <span class="contact-word" style="color:#000000">Github</span>
+          <span class="contact-word" style="color:#007AB9">LinkedIn</span>
         </div>
         <div id="contact-logos">
-          <a class="contact-logo" href="mailto:ngthanhvinh2000@gmail.com">
-            <img src="assets/email.svg" alt="Email Logo">
-          </a>
-          <a class="contact-logo" target="_blank" href="https://www.facebook.com/ngthanhvinh2000">
-            <img src="assets/facebook.svg" alt="Facebook Logo">
-          </a>
-          <a class="contact-logo" target="_blank" href="https://www.github.com/ngthanhvinh">
-            <img src="assets/github.svg" alt="Github Logo">
-          </a>
-          <a class="contact-logo" target="_blank" href="https://www.linkedin.com/in/ngthanhvinh2000">
-            <img src="assets/linkedin.svg" alt="LinkedIn Logo">
-          </a>
+          <img class="contact-logo" src="assets/google.svg" alt="Google Logo" onclick="window.open('mailto:ngthanhvinh2000@gmail.com')" data-toggle="tooltip" data-placement="bottom" title="mailto:ngthanhvinh2000@gmail.com">
+          <img class="contact-logo" src="assets/facebook.svg" alt="Facebook Logo" onclick="window.open('https://www.facebook.com/ngthanhvinh2000')" data-toggle="tooltip" data-placement="bottom" title="https://www.facebook.com/ngthanhvinh2000">
+          <img class="contact-logo" src="assets/github.svg" alt="Github Logo" onclick="window.open('https://www.github.com/ngthanhvinh')" data-toggle="tooltip" data-placement="bottom" title="https://www.github.com/ngthanhvinh">
+          <img class="contact-logo" src="assets/linkedin.svg" alt="LinkedIn Logo" onclick="window.open('https://www.linkedin.com/in/ngthanhvinh2000')" data-toggle="tooltip" data-placement="bottom" title="https://www.linkedin.com/in/ngthanhvinh2000">
         </div>
         ___
         <div style="padding-top: 40px">
@@ -166,6 +158,11 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="js/onHashChange.js"></script>
   <script src="js/contact.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 
   <!--particles.js-->
   <script src="js/particles.js"></script>
