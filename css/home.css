@@ -2,7 +2,7 @@
 .home {
 	color: white;
 	background-color: rgb(32, 35, 41);
-	height: 100vh;
+	min-height: 100vh;
 }
 .home-container {
 	position: absolute;
