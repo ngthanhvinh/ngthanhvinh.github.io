@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
-@import url("https://fonts.googleapis.com/css?family=Literata");
+@import url("https://fonts.googleapis.com/css?family=Glegoo");
 @import "home.css";
 @import "about.css";
 @import "projects.css";
@@ -42,5 +41,5 @@ a {
 }
 
 .text-serif {
-	font-family: "Literata";
+	font-family: "Glegoo";
 }
