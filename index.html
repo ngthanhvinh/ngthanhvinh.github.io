@@ -28,7 +28,7 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar transparent navbar-expand-lg navbar-dark fixed-top text-serif">
+  <nav id="myNavbar" class="navbar transparent navbar-expand-lg navbar-dark fixed-top text-serif">
     <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="ml-auto"></span>
       <span class="ml-auto"></span>
@@ -56,9 +56,9 @@
 
   <div id="fullpage">
     <!--Home-->
-    <div class="section fp-auto-height-responsive fp-noscroll home" id="particles-js">
+    <div class="section fp-auto-height-responsive home" id="home">
       <div class="container home-container">
-        <div class="center-wrap">
+        <div class="center-wrap" >
           <div class="center">
             <div class="greetings text-serif">
               <span
@@ -81,7 +81,7 @@
     </div>
 
     <!--About me-->
-    <div class="section fp-auto-height-responsive about">
+    <div class="section fp-auto-height-responsive fp-noscroll about">
       <div class="center-wrap">
         <div class="center">
             <div class="container about-container">
@@ -89,7 +89,7 @@
                 <div class="portrait-container col-lg-5">
                   <img class="portrait-img img-fluid" src="assets/portrait.png" alt="portrait">
                 </div>
-                <div class="col-lg-7" style="margin: auto; padding-bottom: 15px">
+                <div class="col-lg-7" style="margin: auto; padding-top: 20px; padding-bottom: 20px">
                   <h1 class="text-serif">HEY THERE!</h1>
                   <hr class="hr">
                   <span class="description">
@@ -101,6 +101,10 @@
                       I am described as <strong>a CS enthusiast</strong>. In high school, 
                       I was actively involved in several competitive programming competitions, both nationally and regionally. 
                       Recently, I've been interested in web developing, and this is the first responsive website I've implemented.
+                    </p>
+                    <p>
+                      I love traveling, hanging out with my friends, listening to music, playing football and watching TV shows
+                       (like <i>Stranger Things</i>). Yeah... I can resist anything but temptation.
                     </p>
                   </span>
                 </div>
@@ -125,7 +129,7 @@
     
     <!--Contact-->
     <div class="section fp-auto-height-responsive fp-noscroll contact">
-      <div class="container contact-container">
+      <div class="container contact-container" style="padding-top: 10px">
         <h1 style="font-size: 45px" class="text-serif">Wanna get in touch?</h1>
         <hr class="hr">
         <div style="padding-top:30px">
@@ -143,7 +147,9 @@
         </div>
         ___
         <div style="padding-top: 40px">
-          <h2>And don't forget to check out <a class="resume" target="_blank" href="resume.pdf">my resume</a>!</h2>
+          <h2>And don't forget to check out 
+            <a class="resume" target="_blank" href="resume.pdf">my resume</a>!
+          </h2>
         </div>
       </div>
     </div>
@@ -158,15 +164,7 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="js/onHashChange.js"></script>
   <script src="js/contact.js"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-
-  <!--particles.js-->
-  <script src="js/particles.js"></script>
-  <script src="js/setParticles.js"></script>
+  <script src="js/navbar.js"></script>
 
   <!--Fullpage-->
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
@@ -179,7 +177,7 @@
         autoScrolling: false,
         scrollHorizontally: true,
         anchors:['home', 'about', 'projects', 'contact'],
-        navigation: false,
+        navigation: true,
         scrollBar: true,
         // sectionsColor : ['rgb(32, 35, 41)', 'white', 'rgb(32, 35, 41)', 'white'],
       });
