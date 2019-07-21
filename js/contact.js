@@ -65,5 +65,4 @@ for (let i = 0; i < logos.length; ++i) {
 	});
 }
 
-var changeDelay = 300;
-setInterval(changeWord, changeDelay);
+setInterval(changeWord, 300);

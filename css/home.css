@@ -1,5 +1,6 @@
 /* Home */
-#home {
+.home {
+	position: relative;
 	color: white;
 	/* background-color: rgb(32, 35, 41); */
 	background-image: url("../assets/background.jpg");
@@ -13,10 +14,22 @@
 .greetings {
 	font-size: 57px;
 	margin-bottom: 30px;
+	z-index: 100;
 }
+
 .introduction {
 	font-family: "Quicksand";
 	font-size: 40px;
+	z-index: 100;
+}
+
+.astronaut {
+	position: absolute;
+	opacity: 0.9;
+	bottom: 35px;
+	left: 35px;
+	width: 300px;
+	height: 350px;
 }
 
 @media screen and (max-width: 586px) {
@@ -25,5 +38,13 @@
 	}
 	.introduction {
 		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.astronaut {
+		opacity: 0.35;
+		width: 250px;
+		height: 300px;
 	}
 }
