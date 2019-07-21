@@ -41,9 +41,9 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 	.astronaut {
-		opacity: 0.35;
+		opacity: 0.4;
 		width: 250px;
 		height: 300px;
 	}
