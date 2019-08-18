@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 @import "home.css";
@@ -10,7 +10,7 @@
 
 html,
 body {
-	font-family: "Glegoo";
+	font-family: "Inconsolata";
 	color: #131212;
 }
 
