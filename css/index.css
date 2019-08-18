@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 @import "home.css";
@@ -10,8 +10,8 @@
 
 html,
 body {
-	font-family: "Inconsolata";
-	color: #131212;
+	font-family: "Ubuntu Mono";
+	color: #444242;
 }
 
 /* view content center */
