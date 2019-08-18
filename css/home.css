@@ -41,9 +41,15 @@
 	}
 }
 
+@media screen and (max-height: 700px) {
+	.astronaut {
+		visibility: hidden;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.astronaut {
-		opacity: 0.8;
+		opacity: 0.9;
 		width: 160px;
 		height: 200px;
 	}
