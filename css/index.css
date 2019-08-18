@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 @import "home.css";
@@ -10,8 +10,8 @@
 
 html,
 body {
-	font-family: "Work Sans";
-	color: #414141;
+	font-family: "Glegoo";
+	color: #131212;
 }
 
 /* view content center */
