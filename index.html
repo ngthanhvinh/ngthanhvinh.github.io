@@ -21,6 +21,12 @@
   <!--AOS-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <!--Flickity-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!--Fullpage-->
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
   <!--Title-->
   <title>Vinh Nguyen</title>
 </head>
@@ -132,8 +138,19 @@
       <div class="container projects-container">
         <div class="center-wrap">
           <div class="center">
-            <div class="projects-text text-serif">
-              <h2>Take a glance at what I made in my free time!</h2>
+            <div class="text-serif" style="margin-top: 30px">
+              <h2>Take a glance at what I made during my free time!</h2>
+            </div>
+            <div class="carousel">
+              <div class="carousel-cell">
+                <img src="assets/plasticbag.jpg" alt="plasticbag-faster-rcnn" />
+              </div>
+              <div class="carousel-cell">
+                <img src="assets/SDL_Tetris.png" alt="SDL_Tetris" />
+              </div>
+              <div class="carousel-cell">
+                <img src="assets/objtest.png" alt="ObjTest" />
+              </div>
             </div>
           </div>
         </div>
@@ -173,15 +190,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!--Run all js scripts-->
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+  <!--Flickity-->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    // $(document).ready(function() {
+    //   $('.carousel').flickity({
+    //     // options
+    //     contain: true,
+    //     wrapAround: true,
+    //     imagesLoaded: true,
+    //     lazyLoad: true
+    //   });
+    // });
+  </script>
+
+  <!--All customized JS scripts here-->
   <script src="js/onHashChange.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/home.js"></script>
   <script src="js/onScroll.js"></script>
+  <script src="js/flickity.js"></script>
 
   <!--Fullpage-->
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script>
@@ -191,13 +223,10 @@
         autoScrolling: false,
         scrollHorizontally: true,
         anchors:['home', 'about', 'projects', 'contact'],
-        // navigation: true,
         scrollBar: true,
-        // sectionsColor : ['rgb(32, 35, 41)', 'white', 'rgb(32, 35, 41)', 'white'],
       });
     });
   </script>
-    
 </body>
 
 </html>
