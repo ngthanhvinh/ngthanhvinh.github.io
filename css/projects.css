@@ -5,6 +5,21 @@
 	min-height: 100vh;
 }
 
+.modal {
+	color: #020202;
+	opacity: 0.9;
+	overflow-y: auto;
+	padding-right: 0px;
+}
+
+.modal-open {
+	overflow: auto;
+}
+
+.modal-open[style] {
+	padding-right: 0px !important;
+}
+
 .carousel {
 	width: 80%;
 	margin: auto;

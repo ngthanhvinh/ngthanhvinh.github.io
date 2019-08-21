@@ -138,33 +138,141 @@
       <div class="container projects-container">
         <div class="center-wrap">
           <div class="center">
+            <!--Modals-->
+            <!--plasticbag modal-->
+            <div class="modal fade" id="plasticbagModal" tabindex="-1" role="dialog" aria-labelledby="plasticbagModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="plasticbagModalLabel">
+                      <i>plasticbag-faster-rcnn</i>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    In the summer of 2019, I did my internship in <a target="_blank" href="https://vinai.io">VinAI Research Lab</a>.
+                    There, I was in charge of making a model to detect plastic bags on the streets in Vietnam. 
+                    With the help of <a target="_blank" href="https://www3.cs.stonybrook.edu/~minhhoai/">Mr. Minh Hoai Nguyen</a>,
+                    I successfully released fairly accurate models for the project, which was based on the well-known Faster RCNN architecture.
+                  </div>
+                  <div class="modal-footer">
+                    <a target="_blank" href="https://github.com/ngthanhvinh/plasticbag-faster-rcnn">
+                      For more information ->
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--sdl tetris modal-->
+            <div class="modal fade" id="tetrisModal" tabindex="-1" role="dialog" aria-labelledby="tetrisModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tetrisModalLabel">
+                      <i>SDL Tetris</i>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is a little game project that my friend and I implemented for the sake of entertainment. 
+                      The game was based on the traditional Tetris with some modified rules.</p>
+                    <p><u>Utilized:</u> SDL, C++</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a target="_blank" href="https://github.com/zimportant/SDL_Tetris">
+                      For more information ->
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--objtest modal-->
+            <div class="modal fade" id="objtestModal" tabindex="-1" role="dialog" aria-labelledby="objtestModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="objtestModalLabel">
+                      <i>ObjTest</i>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p><i>ObjTest</i> is a web app I made to predict the object on an image. It uses the VGG16 model with 1000 different classes. 
+                    This was a fun and random experiment of mine, which integrated my curiosity for machine learning and web development.</p>
+                    <p><u>Utilized:</u> Flask, ReactJS, Bootstrap, Tensorflow</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a target="_blank" href="https://github.com/ngthanhvinh/SDL_Tetris">
+                      For more information ->
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!--React 2D Gameboard modal-->
+            <div class="modal fade" id="reactModal" tabindex="-1" role="dialog" aria-labelledby="reactModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="reactModalLabel">
+                      <i>React 2D Gameboard</i>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    In the summer of 2018, I participated in a hackathon in my high school (HSGS Hackathon 2018), in which we had to make
+                    2D math puzzles in ReactJS. I led a team of 4 students (including 3 IOI-ers and me 😂). During the hackathon, 
+                    we had to research efficient algorithms to generate the puzzles as well as design the graphical interface.  
+                    Our team put a lot of effort to the games; and eventually, with high-quality products, we won the champion.
+                  </div>
+                  <div class="modal-footer">
+                    <a target="_blank" href="https://github.com/ngthanhvinh/hsgs-hackathon-18">
+                      For more information ->
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Content-->
             <div class="text-serif" style="margin-top: 70px">
               <h3>Take a glance at what I made during my free time!</h3>
             </div>
             <div class="carousel">
               <div class="carousel-cell">
-                <button>
+                <button type="button" data-toggle="modal" data-target="#plasticbagModal">
                   <img class="img-fluid" src="assets/more.png" alt="more" />
                 </button>
                 <img src="assets/plasticbag.jpg" alt="plasticbag-faster-rcnn" />
                 <div>plasticbag-faster-rcnn</div>
               </div>
               <div class="carousel-cell">
-                <button>
+                <button type="button" data-toggle="modal" data-target="#tetrisModal">
                   <img class="img-fluid" src="assets/more.png" alt="more" />
                 </button>
                 <img src="assets/SDL_Tetris.png" alt="SDL_Tetris" />
                 <div>SDL Tetris</div>
               </div>
               <div class="carousel-cell">
-                <button>
+                <button type="button" data-toggle="modal" data-target="#objtestModal">
                   <img class="img-fluid" src="assets/more.png" alt="more" />
                 </button>
                 <img src="assets/objtest.png" alt="ObjTest" />
                 <div>ObjTest</div>
               </div>
               <div class="carousel-cell">
-                <button>
+                  <button type="button" data-toggle="modal" data-target="#reactModal">
                   <img class="img-fluid" src="assets/more.png" alt="more" />
                 </button>
                 <img src="assets/deltarena.png" alt="React 2D Gameboard" />
@@ -213,17 +321,6 @@
 
   <!--Flickity-->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script>
-    // $(document).ready(function() {
-    //   $('.carousel').flickity({
-    //     // options
-    //     contain: true,
-    //     wrapAround: true,
-    //     imagesLoaded: true,
-    //     lazyLoad: true
-    //   });
-    // });
-  </script>
 
   <!--All customized JS scripts here-->
   <script src="js/onHashChange.js"></script>
